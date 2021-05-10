@@ -24,11 +24,16 @@ public class Demo {
 
 	public static Demo getFloatValue() { 
 		 System.out.println("float value is"); 
-		 
-		if (fook==null) {
-			fook = new DemoSubproject2();
-		}                       
-		return fook;
+		try{
+			if (fook==null) {
+				fook = new DemoSubproject2();
+			}                      
+			return fook;
+		}
+		catch(Exception ex){
+			System.out.println(ex);
+			return ex;
+		}
 	}
 	
 	
