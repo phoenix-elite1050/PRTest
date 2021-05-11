@@ -33,7 +33,9 @@ public class Demo {
 	
 	
 	public static int getIntValue() {
+		System.out.println("getIntValue");
 	int k = 58; 
+		System.out.println("value of k is::"+k);
 	return k;	
 	}
 	
